@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Personal landing page" />
+    <meta name="theme-color" content="#0b0d12" id="meta-theme-color" />
+    <title id="site-title">Personal Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <nav class="nav container">
+        <a href="#top" class="brand" id="brand">
+          <span class="brand-mark" aria-hidden="true">✦</span>
+          <span class="brand-text" id="brand-text">Site</span>
+        </a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#highlights">Highlights</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <div class="theme-switcher" role="group" aria-label="Theme switcher">
+              <button class="theme-btn" data-theme="light" title="Light mode" aria-label="Light mode">☀️</button>
+              <button class="theme-btn" data-theme="system" title="System" aria-label="System">🖥️</button>
+              <button class="theme-btn" data-theme="dark" title="Dark mode" aria-label="Dark mode">🌙</button>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero container" id="hero" aria-label="Hero">
+        <div class="hero-bg" aria-hidden="true">
+          <div class="orb orb-a"></div>
+          <div class="orb orb-b"></div>
+          <div class="grid-overlay"></div>
+        </div>
+        <div class="hero-content">
+          <h1 class="hero-title reveal" id="hero-name">Your Name</h1>
+          <p class="hero-subtitle reveal" id="hero-role">Role • Domain • Location</p>
+          <p class="hero-bio reveal" id="hero-bio">Short bio will appear here from content.json</p>
+          <div class="hero-cta reveal">
+            <a href="#work" class="btn primary">View Work</a>
+            <a href="#contact" class="btn ghost">Get in touch</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section container" id="about" aria-label="About">
+        <div class="section-head">
+          <h2 class="section-title">About</h2>
+          <p class="section-subtitle">Background, mission, and impact</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-media reveal">
+            <div class="avatar" id="avatar" aria-hidden="true"></div>
+          </div>
+          <div class="about-content reveal">
+            <h3 id="about-heading">Biography</h3>
+            <p id="about-text">Content will load dynamically from content.json. Replace placeholders there.</p>
+            <ul class="about-facts" id="about-facts"></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="highlights section container" id="highlights" aria-label="Highlights">
+        <div class="section-head">
+          <h2 class="section-title">Highlights</h2>
+          <p class="section-subtitle">Key numbers and achievements</p>
+        </div>
+        <div class="stats-grid" id="stats">
+          <!-- populated via script.js -->
+        </div>
+      </section>
+
+      <section class="work section container" id="work" aria-label="Work">
+        <div class="section-head">
+          <h2 class="section-title">Selected Work</h2>
+          <p class="section-subtitle">Projects, initiatives, and features</p>
+        </div>
+        <div class="filters reveal" id="work-filters">
+          <button class="chip is-active" data-filter="all">All</button>
+          <button class="chip" data-filter="project">Projects</button>
+          <button class="chip" data-filter="media">Media</button>
+          <button class="chip" data-filter="award">Awards</button>
+        </div>
+        <div class="cards-grid" id="work-cards">
+          <!-- cards populated dynamically -->
+        </div>
+      </section>
+
+      <section class="publications section container" id="publications" aria-label="Publications">
+        <div class="section-head">
+          <h2 class="section-title">Publications</h2>
+          <p class="section-subtitle">Articles, talks, and appearances</p>
+        </div>
+        <ul class="pub-list" id="pub-list">
+          <!-- populated dynamically -->
+        </ul>
+      </section>
+
+      <section class="contact section container" id="contact" aria-label="Contact">
+        <div class="section-head">
+          <h2 class="section-title">Contact</h2>
+          <p class="section-subtitle">Let’s collaborate</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card reveal">
+            <h3>Reach out</h3>
+            <p id="contact-blurb">I’m available for speaking, media interviews, and collaborations.</p>
+            <div class="contact-actions">
+              <a id="contact-email" class="btn primary" href="#">Email</a>
+              <div class="socials" id="socials"></div>
+            </div>
+          </div>
+          <form class="contact-form reveal" action="#" method="dialog" onsubmit="return false;" aria-label="Contact form">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="How can we work together?" required></textarea>
+            </div>
+            <button class="btn primary" id="fake-submit" type="submit">Send</button>
+            <p class="form-note">This demo uses your mail client: use the Email button to reach out.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <button class="to-top" id="to-top" aria-label="Back to top">▲</button>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p id="copyright">© <span id="year"></span> <span id="footer-name">Your Name</span>. All rights reserved.</p>
+        <nav class="footer-links" id="footer-links"></nav>
+      </div>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>

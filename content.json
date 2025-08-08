@@ -1,0 +1,68 @@
+{
+  "siteTitle": "Karvika Thapa — Official Website",
+  "brand": "Karvika Thapa",
+  "person": {
+    "name": "Karvika Thapa",
+    "role": "[Role/Title]",
+    "domain": "[Domain/Expertise]",
+    "location": "[City, Country]",
+    "bio": "This is a placeholder biography. Replace with accurate details extracted from the source website when available."
+  },
+  "about": {
+    "heading": "About Karvika",
+    "text": "Write a concise background, career highlights, and mission statement here.",
+    "facts": [
+      {"title": "Education", "text": "[Degree, Institution]"},
+      {"title": "Focus", "text": "[Key fields / causes]"},
+      {"title": "Based in", "text": "[City, Country]"}
+    ]
+  },
+  "stats": [
+    {"label": "Years of work", "value": 8},
+    {"label": "Projects", "value": 24},
+    {"label": "Talks / Media", "value": 12},
+    {"label": "Awards", "value": 6}
+  ],
+  "work": [
+    {
+      "type": "project",
+      "title": "Featured Project",
+      "subtitle": "Short tagline",
+      "description": "One-liner description of the project. Replace with real content.",
+      "tags": ["Design", "Impact"],
+      "link": "#"
+    },
+    {
+      "type": "media",
+      "title": "Interview / Article",
+      "subtitle": "Publication name",
+      "description": "A notable interview or feature.",
+      "tags": ["Media"],
+      "link": "#"
+    },
+    {
+      "type": "award",
+      "title": "Award Name",
+      "subtitle": "Issuer • Year",
+      "description": "Brief context of the award.",
+      "tags": ["Recognition"]
+    }
+  ],
+  "publications": [
+    {"title": "Talk: [Title]", "venue": "[Event]", "year": "2024", "url": "#"},
+    {"title": "Article: [Title]", "venue": "[Outlet]", "year": "2023", "url": "#"}
+  ],
+  "contact": {
+    "blurb": "For collaborations, speaking, or media requests, reach out via email or socials.",
+    "email": "hello@example.com",
+    "socials": [
+      {"name": "X/Twitter", "url": "https://x.com/", "icon": "𝕏"},
+      {"name": "LinkedIn", "url": "https://linkedin.com/", "icon": "in"},
+      {"name": "Instagram", "url": "https://instagram.com/", "icon": "◎"}
+    ]
+  },
+  "footerLinks": [
+    {"label": "Privacy", "url": "#"},
+    {"label": "Terms", "url": "#"}
+  ]
+}

@@ -116,19 +116,6 @@ body{
 .stat-label{color:var(--muted)}
 
 /**************************
-  Socials grid
-***************************/
-.socials-grid{display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap:16px}
-.social-card{position:relative; overflow:hidden; background:var(--card); border:1px solid var(--border); border-radius:18px; padding:18px; box-shadow: var(--shadow-sm);
-  transition: transform .25s ease, box-shadow .25s ease, background .25s ease}
-.social-card:hover{transform: translateY(-6px) scale(1.02); box-shadow: var(--shadow-md)}
-.social-card::after{content:""; position:absolute; inset:auto -40% -40% auto; width:180px; height:180px; background: radial-gradient(closest-side, color-mix(in oklab, var(--brand) 60%, transparent), transparent 70%); transform: rotate(25deg); opacity:.35; pointer-events:none}
-.social-icon{width:44px; height:44px; display:grid; place-items:center; border-radius:12px; background: linear-gradient(135deg, var(--brand), var(--brand-2)); color:#0b0d12; box-shadow: var(--shadow-sm)}
-.social-title{margin:10px 0 2px; font-weight:800}
-.social-hint{margin:0; color:var(--muted); font-size:13px}
-.social-card a{position:absolute; inset:0; text-indent:-9999px}
-
-/**************************
   Work cards
 ***************************/
 .filters{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px}

@@ -17,11 +17,12 @@
       {"title": "Based in", "text": "[City, Country]"}
     ]
   },
-  "stats": [
-    {"label": "Years of work", "value": 8},
-    {"label": "Projects", "value": 24},
-    {"label": "Talks / Media", "value": 12},
-    {"label": "Awards", "value": 6}
+  "socials": [
+    {"name": "Facebook", "url": "https://www.facebook.com/karvika.thapa"},
+    {"name": "Instagram", "url": "https://www.instagram.com/karvikathapa/"},
+    {"name": "X / Twitter", "url": "https://x.com/Karvikat"},
+    {"name": "LinkedIn", "url": "https://www.linkedin.com/in/karvika-thapa-5b918311/"},
+    {"name": "Wikipedia", "url": "#"}
   ],
   "work": [
     {
@@ -56,9 +57,10 @@
     "blurb": "For collaborations, speaking, or media requests, reach out via email or socials.",
     "email": "hello@example.com",
     "socials": [
-      {"name": "X/Twitter", "url": "https://x.com/", "icon": "𝕏"},
-      {"name": "LinkedIn", "url": "https://linkedin.com/", "icon": "in"},
-      {"name": "Instagram", "url": "https://instagram.com/", "icon": "◎"}
+      {"name": "X / Twitter", "url": "https://x.com/Karvikat"},
+      {"name": "LinkedIn", "url": "https://www.linkedin.com/in/karvika-thapa-5b918311/"},
+      {"name": "Instagram", "url": "https://www.instagram.com/karvikathapa/"},
+      {"name": "Facebook", "url": "https://www.facebook.com/karvika.thapa"}
     ]
   },
   "footerLinks": [
